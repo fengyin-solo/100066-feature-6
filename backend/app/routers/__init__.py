@@ -6,6 +6,7 @@
 """
 from __future__ import annotations
 
+from app.routers import overview as router_overview
 from app.routers import sample as router_sample
 from app.routers import client as router_client
 from app.routers import project as router_project
@@ -25,4 +26,4 @@ from app.routers import complaint as router_complaint
 from app.routers import stockin as router_stockin
 from app.routers import settlement as router_settlement
 
-ROUTERS = [router_sample, router_client, router_project, router_task, router_execute, router_result, router_review, router_instrument, router_calibration, router_reagent, router_consume, router_environment, router_report, router_issue, router_qc, router_complaint, router_stockin, router_settlement]
+ROUTERS = [router_overview, router_sample, router_client, router_project, router_task, router_execute, router_result, router_review, router_instrument, router_calibration, router_reagent, router_consume, router_environment, router_report, router_issue, router_qc, router_complaint, router_stockin, router_settlement]

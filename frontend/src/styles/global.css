@@ -33,3 +33,12 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.stat-card.clickable { cursor: pointer; transition: box-shadow .15s ease, border-color .15s ease; }
+.stat-card.clickable:hover { box-shadow: 0 1px 4px rgba(15, 23, 42, .12); }
+.stat-card.active { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand) inset; }
+.tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; }
+.tag.pending { background: #fff7ed; color: #c2410c; }
+.tag.abnormal { background: #fef2f2; color: #b42318; }
+.empty-panel { background: #fff; border: 1px dashed var(--border); border-radius: 8px; padding: 32px 16px; text-align: center; color: var(--muted); }
+.empty-panel h3 { margin: 0 0 6px; font-size: 14px; color: #1f2937; }
+.empty-panel p { margin: 0 0 12px; font-size: 13px; }

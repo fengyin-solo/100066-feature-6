@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Dashboard from '@/views/Dashboard.vue'
+const Drilldown = () => import('@/views/drilldown/index.vue')
 const Sample = () => import('@/views/sample/index.vue')
 const Client = () => import('@/views/client/index.vue')
 const Project = () => import('@/views/project/index.vue')
@@ -24,6 +25,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', name: 'dashboard', component: Dashboard },
+    { path: '/overview/drilldown/:module', name: 'overview-drilldown', component: Drilldown },
     { path: '/sample', name: 'sample', component: Sample },
     { path: '/client', name: 'client', component: Client },
     { path: '/project', name: 'project', component: Project },
